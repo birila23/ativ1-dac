@@ -22,5 +22,6 @@ public class DataService {
 
         ModelMongoDB document = new ModelMongoDB(code, text, confirmed);
         mongoRepository.save(document);
+        System.out.println("SALVANDO NO MONGO...");
     }
 }
